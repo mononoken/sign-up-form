@@ -1,0 +1,69 @@
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+figure.hero-img {
+  background-image: url("imgs/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  float: left;
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+
+div.hero-banner {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 160px;
+  width: 100%;
+  margin: 200px auto 0 auto;
+  padding: 16px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.hero-banner img {
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
+}
+
+div.hero-banner span {
+  /* font-family: ; */
+  vertical-align: middle;
+  font-size: 8rem;
+  color: white;
+}
+
+figure.hero-img figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+
+  /* font-family: ; */
+  color: rgba(255, 255, 255, 0.8);
+}
+
+figcaption a[href^="https"] {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: underline;
+}
+
+main {
+  width: auto;
+  float: none;
+  overflow: hidden;
+}

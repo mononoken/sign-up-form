@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | The Odin Project</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
+  <body>
+    <figure class="hero-img">
+      <div class="hero-banner">
+        <img src="imgs/odin-lined.png" alt="Odin Icon" />
+        <span>ODIN</span>
+      </div>
+      <figcaption>
+        Photo by
+        <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+        <a href="https://unsplash.com/">Unsplash</a>
+      </figcaption>
+    </figure>
+    <div class="main">
+      <div class="call-to-action">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="" method="get">
+        <div class="form-inputs">
+          <h1>Let's do this!</h1>
+          <div>
+            <label for="fname">FIRST NAME</label>
+            <input type="text" name="f_name" id="fname" required />
+          </div>
+          <div>
+            <label for="lname">LAST NAME</label>
+            <input type="text" name="l_name" id="lname" required />
+          </div>
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div>
+            <label for="pass">PASSWORD</label>
+            <input
+              type="password"
+              name="password"
+              id="pass"
+              minlength="8"
+              required
+            />
+          </div>
+          <div>
+            <label for="repass">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="re_password"
+              id="repass"
+              minlength="8"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </form>
+    </div>
+  </body>
 </html>
