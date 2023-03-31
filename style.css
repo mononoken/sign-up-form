@@ -6,7 +6,7 @@ html {
   height: 100vh;
   width: 100%;
 
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   font-size: 18px;
 }
 
@@ -15,8 +15,12 @@ body {
   width: 100%;
 }
 
+em {
+  font-style: italic;
+}
+
 figure.hero-img {
-  background-image: url("imgs/halie-west-25xggax4bSA-unsplash.jpg");
+  background-image: url("imgs/halie-west-25xggax4bsa-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -26,7 +30,7 @@ figure.hero-img {
   width: 40%;
 }
 
-div.hero-banner {
+.hero-banner {
   background-color: rgba(0, 0, 0, 0.4);
   height: 160px;
   width: 100%;
@@ -37,17 +41,18 @@ div.hero-banner {
   justify-content: center;
   align-items: center;
 }
-div.hero-banner * {
+
+.hero-banner * {
   opacity: 80%;
 }
 
-div.hero-banner img {
+.hero-banner img {
   vertical-align: middle;
   height: 100%;
   width: auto;
 }
 
-div.hero-banner span {
+.hero-banner span {
   /* font-family: ; */
   vertical-align: middle;
   font-size: 8rem;
@@ -76,35 +81,36 @@ main {
   height: 100%;
   width: auto;
   float: none;
-  overflow: hidden;
+  overflow: scroll;
 
   background-color: #f9fafb;
 }
 
-main .call-to-action {
+.call-to-action {
+  margin: 200px 0 48px 0;
   padding-left: 48px;
-}
-
-main form > * {
-  padding-left: 48px;
-}
-
-main .call-to-action {
-  margin: 100px 0 48px 0;
-
   /* font-family: ; */
   font-size: 1.5rem;
 }
 
-main .call-to-action em {
-  font-style: italic;
-}
-
-main .call-to-action > p {
+.call-to-action > p {
   margin-bottom: 1.5rem;
 }
 
-main form .form-inputs {
+form > * {
+  padding-left: 48px;
+}
+
+form .form-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 22px;
+  grid-template-areas:
+    "header header"
+    "content content"
+    "content content"
+    "content content";
+
   padding-top: 16px;
   padding-bottom: 24px;
 
@@ -113,6 +119,7 @@ main form .form-inputs {
 }
 
 form h1 {
+  grid-area: header;
   padding-bottom: 16px;
   font-size: 1.5rem;
 }
@@ -120,7 +127,6 @@ form h1 {
 form label {
   color: #1f2937;
   font-size: 0.7rem;
-  font-weight: bold;
   letter-spacing: 0.1rem;
 }
 
@@ -131,4 +137,31 @@ form input {
   padding: 4px;
   border: 1px solid #e5e7eb;
   border-radius: 4px;
+
+  font-size: 1rem;
+}
+
+form .form-submit {
+  margin-top: 40px;
+}
+
+button {
+  color: white;
+  background-color: #596d48;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 48px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+.form-submit p {
+  margin-top: 48px;
+}
+
+a[href^="https"] {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
 }
