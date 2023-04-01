@@ -1,3 +1,8 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,7 +48,7 @@ figure.hero-img {
 }
 
 .hero-banner * {
-  opacity: 80%;
+  opacity: 90%;
 }
 
 .hero-banner img {
@@ -53,9 +58,9 @@ figure.hero-img {
 }
 
 .hero-banner span {
-  /* font-family: ; */
+  font-family: norse-bold, Arial, sans-serif;
   vertical-align: middle;
-  font-size: 8rem;
+  font-size: 6rem;
   color: white;
 }
 
@@ -73,6 +78,7 @@ figure.hero-img figcaption {
 
 figcaption a[href^="https"] {
   font-family: inherit;
+  font-weight: normal;
   color: inherit;
   text-decoration: underline;
 }
@@ -89,6 +95,7 @@ main {
 .call-to-action {
   margin: 200px 0 48px 0;
   padding-left: 48px;
+  padding-right: 160px;
   /* font-family: ; */
   font-size: 1.5rem;
 }
@@ -99,6 +106,7 @@ main {
 
 form > * {
   padding-left: 48px;
+  padding-right: 160px;
 }
 
 form .form-inputs {
