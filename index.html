@@ -35,19 +35,44 @@
           <h1>Let's do this!</h1>
           <div>
             <label for="fname">FIRST NAME</label>
-            <input type="text" name="f_name" id="fname" required />
+            <input
+              type="text"
+              name="f_name"
+              id="fname"
+              placeholder="Inigo"
+              required
+            />
           </div>
           <div>
             <label for="lname">LAST NAME</label>
-            <input type="text" name="l_name" id="lname" required />
+            <input
+              type="text"
+              name="l_name"
+              id="lname"
+              placeholder="Montoya"
+              required
+            />
           </div>
           <div>
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" required />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="i.montoya@protonmail.com"
+              required
+            />
           </div>
           <div>
             <label for="phone">PHONE NUMBER</label>
-            <input type="tel" name="phone" id="phone" />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="505-555-1234"
+              required
+            />
           </div>
           <div>
             <label for="pass">PASSWORD</label>
